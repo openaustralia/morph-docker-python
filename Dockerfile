@@ -33,3 +33,12 @@ RUN pip install -r /etc/pip_requirements.txt
 #RUN pip install twill==0.9
 #RUN pip install unattended-upgrades==0.1
 #RUN pip install zapps==0.5
+
+RUN apt-get -y install pdftohtml
+# TODO Install https://github.com/scraperwiki/scraperwiki-python
+# Special handling to install scraperwiki library
+RUN git clone https://github.com/scraperwiki/scraperwiki-python /tmp/scraperwiki
+RUN cd /tmp/scraperwiki; python ./setup.py install
+RUN rm -rf /tmp/scraperwiki
+
+
