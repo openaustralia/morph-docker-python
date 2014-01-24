@@ -36,7 +36,6 @@ RUN pip install -r /etc/pip_requirements.txt
 
 # poppler-utils has a more recent pdftohtml than the pdftohtml package
 RUN apt-get -y install poppler-utils
-# TODO Install https://github.com/scraperwiki/scraperwiki-python
 # Special handling to install scraperwiki library
 RUN git clone https://github.com/openaustralia/scraperwiki-python.git /tmp/scraperwiki
 RUN cd /tmp/scraperwiki; git checkout morph_defaults
