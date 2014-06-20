@@ -1,6 +1,9 @@
-FROM openaustralia/morph-base
-MAINTAINER Matthew Landauer <matthew@oaf.org.au>
+FROM opencorporates/morph-ruby
+MAINTAINER Seb Bacon <seb@opencorporates.com>
 
+# Volume for sharing wrapper script
+VOLUME /utils
+RUN apt-get update
 RUN apt-get -y install apt-utils python wget build-essential python-dev swig libevent-dev python-protobuf libprotobuf-dev libcurl4-gnutls-dev python-setuptools libxml2-dev libxslt-dev libblas-dev liblapack-dev gfortran libfreetype6-dev libpng-dev
 
 RUN wget http://arshaw.com/scrapemark/downloads/scrapemark-0.9-py2.7.egg; easy_install scrapemark-0.9-py2.7.egg
@@ -41,5 +44,3 @@ RUN git clone https://github.com/openaustralia/scraperwiki-python.git /tmp/scrap
 RUN cd /tmp/scraperwiki; git checkout morph_defaults
 RUN cd /tmp/scraperwiki; python ./setup.py install
 RUN rm -rf /tmp/scraperwiki
-
-
