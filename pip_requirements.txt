@@ -16,4 +16,4 @@ python-stdnum==0.7
 requests==2.3.0
 scraperwiki==0.3.10
 simplejson==2.2.1
-turbotlib==0.0.4
+turbotlib==0.0.5
