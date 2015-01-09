@@ -11,7 +11,7 @@ python-modargs==1.2
 python-stdnum==0.7
 requests==2.3.0
 simplejson==2.2.1
-turbotlib==0.0.4
+turbotlib==0.0.6
 lxml==3.3.5
 pyquery==1.2.8
 Scrapy==0.22
