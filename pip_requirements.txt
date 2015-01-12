@@ -15,5 +15,5 @@ turbotlib==0.0.6
 lxml==3.3.5
 pyquery==1.2.8
 Scrapy==0.22
-scraperwiki==0.3.10
+scraperwiki==0.4.1
 PyYAML==3.11
