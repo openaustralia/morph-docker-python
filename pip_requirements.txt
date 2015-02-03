@@ -17,3 +17,4 @@ pyquery==1.2.8
 Scrapy==0.22
 scraperwiki==0.4.1
 PyYAML==3.11
+xlrd==0.9.3
