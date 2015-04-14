@@ -5,8 +5,8 @@ RUN apt-get -y install apt-utils python wget build-essential python-dev swig lib
 
 RUN wget http://arshaw.com/scrapemark/downloads/scrapemark-0.9-py2.7.egg; easy_install scrapemark-0.9-py2.7.egg
 
-# Install pip
-RUN wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py; python get-pip.py
+# Install an old version of pip
+RUN easy_install pip==1.2.1
 
 # This needs to be installed first
 RUN pip install numpy==1.6.1
