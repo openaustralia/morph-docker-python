@@ -42,4 +42,4 @@ RUN cd /tmp/scraperwiki; git checkout morph_defaults
 RUN cd /tmp/scraperwiki; python ./setup.py install
 RUN rm -rf /tmp/scraperwiki
 
-
+ADD python-requests.sh /etc/profile.d/python-requests.sh
