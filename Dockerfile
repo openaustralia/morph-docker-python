@@ -1,6 +1,6 @@
 FROM opencorporates/morph-ruby
 MAINTAINER Seb Bacon <seb@opencorporates.com>
-
+USER root
 # Volume for sharing wrapper script
 VOLUME /utils
 RUN apt-get update
@@ -19,3 +19,4 @@ RUN pip install -r /etc/pip_requirements.txt
 
 # poppler-utils has a more recent pdftohtml than the pdftohtml package
 RUN apt-get -y install poppler-utils
+USER openc
