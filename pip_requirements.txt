@@ -18,3 +18,4 @@ Scrapy==0.22
 scraperwiki==0.4.1
 PyYAML==3.11
 xlrd==0.9.3
+-e git+git://github.com/PabloCastellano/bormeparser.git#egg=bormeparser
